@@ -1,3 +1,5 @@
+import smartpy as sp
+
 class Token(sp.Contract):
     def __init__(self, token_sale_address, initial_balance):
         self.init(balances = {sp.sender: initial_balance}, token_sale_address=token_sale_address)

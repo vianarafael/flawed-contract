@@ -1,0 +1,4 @@
+{ parameter mutez ;
+  storage (map address mutez) ;
+  code { UNPAIR ; SENDER ; SWAP ; SOME ; SWAP ; UPDATE ; NIL operation ; PAIR } }
+

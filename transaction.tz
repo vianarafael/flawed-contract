@@ -1,0 +1,15 @@
+{ parameter unit ;
+  storage unit ;
+  code { DROP ;
+         PUSH address "KT1LRe2LBTQypEfHuNDtpAQsN9ZSJ5sEMvPH" ;
+         CONTRACT mutez ;
+         IF_NONE { PUSH string "Contract not found." ; FAILWITH } {} ;
+         PUSH mutez 1 ;
+         PUSH mutez 10000000 ;
+         TRANSFER_TOKENS ;
+         UNIT ;
+         NIL operation ;
+         DIG 2 ;
+         CONS ;
+         PAIR } }
+
